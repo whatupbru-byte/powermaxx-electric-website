@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "https://www.powermaxxelectric.com/*"
+  to = "https://powermaxxelectric.com/:splat"
+  status = 301
+  force = true
