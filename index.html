@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PowerMaxx Electric | GTA Electrical Contractor</title>
-    <meta name="description" content="PowerMaxx Electric provides residential, commercial, and industrial electrical services across the GTA and surrounding areas. Call 416-697-4671 for a free quote." />
+    <title>Licensed Electrician in the GTA | PowerMaxx Electric</title>
+    <meta name="description" content="Licensed GTA electrician for residential, commercial, and industrial electrical work, repairs, upgrades, and maintenance. Call PowerMaxx Electric at 416-697-4671." />
     <meta name="theme-color" content="#0b1720" />
-    <meta property="og:title" content="PowerMaxx Electric" />
-    <meta property="og:description" content="Reliable electrical service, construction, maintenance, troubleshooting, and repair across the GTA." />
+    <meta property="og:title" content="Licensed Electrician in the GTA | PowerMaxx Electric" />
+    <meta property="og:description" content="Residential, commercial, and industrial electrical services across the GTA. Call 416-697-4671 for a quote." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://powermaxxelectric.com/" />
+    <meta property="og:image" content="https://powermaxxelectric.com/assets/powermaxx-logo-board.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://powermaxxelectric.com/" />
     <link rel="icon" type="image/png" href="assets/powermaxx-icon.png" />
     <link rel="apple-touch-icon" href="assets/powermaxx-icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="phase1.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Electrician",
+        "@type": ["Electrician", "LocalBusiness"],
         "name": "PowerMaxx Electric",
         "url": "https://powermaxxelectric.com/",
         "telephone": "+1-416-697-4671",
@@ -25,7 +28,9 @@
         "areaServed": "Greater Toronto Area",
         "foundingDate": "2005",
         "license": "ECRA Licence 7004308",
-        "sameAs": ["https://www.facebook.com/PowerMaxxElectricalServices"]
+        "sameAs": ["https://www.facebook.com/PowerMaxxElectricalServices"],
+        "priceRange": "$$",
+        "image": "https://powermaxxelectric.com/assets/powermaxx-logo-board.png"
       }
     </script>
   </head>
@@ -51,11 +56,11 @@
         <div class="hero-content">
           <div class="hero-logo" aria-hidden="true"><img src="assets/powermaxx-logo-dark.png" alt="" /></div>
           <p class="eyebrow">Serving the GTA and surrounding areas since 2005</p>
-          <h1>PowerMaxx Electric</h1>
+          <h1>Licensed Electrician Serving the GTA</h1>
           <p class="hero-copy">Residential, commercial, and industrial electrical services delivered with practical planning, careful workmanship, and dependable follow-through.</p>
           <div class="hero-actions" aria-label="Primary contact actions">
             <a class="button primary" href="tel:+14166974671">Call 416.697.4671</a>
-            <a class="button secondary" href="mailto:powermaxxelectric@gmail.com">Email for a Quote</a>
+            <a class="button secondary" href="#contact">Request a Quote</a>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Quick details">
@@ -121,19 +126,22 @@
         <div class="contact-copy">
           <p class="eyebrow">Free Quote</p>
           <h2>Tell PowerMaxx what you need done.</h2>
-          <p>Call, email, or use the quick form. The form opens your email app with the details filled in, so there is no hidden backend to maintain.</p>
+          <p>Call, email, or send the form below with your project details. PowerMaxx Electric will follow up to discuss the work and next steps.</p>
           <div class="contact-methods"><a href="tel:+14166974671">416.697.4671</a><a href="mailto:powermaxxelectric@gmail.com">powermaxxelectric@gmail.com</a><a href="https://www.facebook.com/PowerMaxxElectricalServices">Facebook</a></div>
         </div>
-        <form class="quote-form" data-quote-form>
+        <form class="quote-form" name="quote-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="quote-request" />
+          <p class="hidden-field"><label>Do not fill this out: <input name="bot-field" /></label></p>
           <label>Name<input name="name" autocomplete="name" required /></label>
           <label>Phone or email<input name="contact" autocomplete="email" required /></label>
           <label>Project type<select name="type" required><option value="">Choose one</option><option>Residential</option><option>Commercial</option><option>Industrial</option><option>Maintenance or repair</option></select></label>
           <label>What do you need help with?<textarea name="message" rows="5" required></textarea></label>
-          <button class="button primary form-button" type="submit">Prepare Email</button>
-          <p class="form-note" data-form-note aria-live="polite"></p>
+          <button class="button primary form-button" type="submit">Send Quote Request</button>
+          <p class="form-note" aria-live="polite">Your information is used only to respond to your request.</p>
         </form>
       </section>
     </main>
+    <div class="mobile-actions" aria-label="Quick contact actions"><a href="tel:+14166974671">Call Now</a><a href="#contact">Get a Quote</a></div>
     <footer class="site-footer">
       <div><strong>PowerMaxx Electric</strong><span>Residential, commercial, and industrial electrical services.</span></div>
       <nav aria-label="Footer navigation"><a href="#services">Services</a><a href="#contact">Contact</a><a href="mailto:powermaxxelectric@gmail.com">Email</a></nav>
