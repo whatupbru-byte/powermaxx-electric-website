@@ -1,0 +1,10 @@
+https://www.powermaxxelectric.com/* https://powermaxxelectric.com/:splat 301!
+
+/panel-upgrades.html /services/panel-upgrades/ 301
+/ev-charger-installation.html /services/ev-charger-installation/ 301
+/electrical-repairs.html /services/electrical-repairs/ 301
+
+/services/panel-upgrades/ /panel-upgrades.html 200
+/services/ev-charger-installation/ /ev-charger-installation.html 200
+/services/electrical-repairs/ /electrical-repairs.html 200
+/services/whole-home-surge-protection/ /services/surge-protection/ 301
