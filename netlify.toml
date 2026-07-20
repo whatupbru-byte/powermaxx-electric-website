@@ -6,3 +6,33 @@
   to = "https://powermaxxelectric.com/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/panel-upgrades.html"
+  to = "/services/panel-upgrades/"
+  status = 301
+
+[[redirects]]
+  from = "/ev-charger-installation.html"
+  to = "/services/ev-charger-installation/"
+  status = 301
+
+[[redirects]]
+  from = "/electrical-repairs.html"
+  to = "/services/electrical-repairs/"
+  status = 301
+
+[[redirects]]
+  from = "/services/panel-upgrades/"
+  to = "/panel-upgrades.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/ev-charger-installation/"
+  to = "/ev-charger-installation.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/electrical-repairs/"
+  to = "/electrical-repairs.html"
+  status = 200
