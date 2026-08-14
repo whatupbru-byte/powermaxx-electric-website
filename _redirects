@@ -1,5 +1,8 @@
 https://www.powermaxxelectric.com/* https://powermaxxelectric.com/:splat 301!
 
+# Redirect the duplicated legacy repository folder away from the crawlable site
+/powermaxx-electric-website/* /:splat 301!
+
 /panel-upgrades.html /services/panel-upgrades/ 301
 /ev-charger-installation.html /services/ev-charger-installation/ 301
 /electrical-repairs.html /services/electrical-repairs/ 301
